@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dan Khyrie Barnuevo | BSIT 1C</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(-45deg,#0f172a,#1e293b,#312e81,#0f172a);
+    background-size:400% 400%;
+    animation:bgMove 10s ease infinite;
+    overflow:hidden;
+}
+
+@keyframes bgMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.container{
+    text-align:center;
+    color:white;
+    padding:40px;
+    border-radius:25px;
+    backdrop-filter:blur(12px);
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.2);
+    box-shadow:0 0 30px rgba(0,255,255,0.3);
+    animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-10px);}
+}
+
+h1{
+    font-size:3rem;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    color:#00ffff;
+    text-shadow:
+        0 0 10px #00ffff,
+        0 0 20px #00ffff,
+        0 0 40px #00ffff;
+}
+
+h2{
+    margin-top:10px;
+    color:#f8fafc;
+    font-weight:300;
+}
+
+.line{
+    width:120px;
+    height:4px;
+    background:#00ffff;
+    margin:20px auto;
+    border-radius:50px;
+}
+
+.quote{
+    margin-top:20px;
+    font-size:1.1rem;
+    color:#cbd5e1;
+    max-width:600px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 30px;
+    text-decoration:none;
+    color:white;
+    border:2px solid #00ffff;
+    border-radius:50px;
+    transition:.4s;
+}
+
+.btn:hover{
+    background:#00ffff;
+    color:#000;
+    box-shadow:0 0 20px #00ffff;
+}
+
+.circle{
+    position:absolute;
+    border-radius:50%;
+    background:rgba(0,255,255,0.15);
+    animation:move 15s linear infinite;
+}
+
+.circle:nth-child(1){
+    width:200px;
+    height:200px;
+    left:-50px;
+    top:50px;
+}
+
+.circle:nth-child(2){
+    width:150px;
+    height:150px;
+    right:50px;
+    bottom:50px;
+}
+
+@keyframes move{
+    50%{
+        transform:translateY(-30px) rotate(180deg);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="circle"></div>
+<div class="circle"></div>
+
+<div class="container">
+    <h1>Dan Khyrie Barnuevo</h1>
+    <h2>BSIT 1C</h2>
+
+    <div class="line"></div>
+
+    <p class="quote">
+        "Turning ideas into reality through technology, creativity,
+        and continuous learning."
+    </p>
+
+    <a href="#" class="btn">Future IT Professional</a>
+</div>
+
+</body>
+</html>

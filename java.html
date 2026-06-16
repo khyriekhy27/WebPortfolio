@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NBA Highlights - PALDO</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #fdfdfd;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: white;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+            font-size: 24px;
+            font-weight: bold;
+            color: red;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 10px;
+        }
+
+        .video-card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        video {
+            width: 100%;
+            border-radius: 10px;
+            border: 2px solid #ddd;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .description {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+        }
+
+        .audio-box {
+            margin-top: 20px;
+            padding: 15px;
+            border: 3px solid red;
+            border-radius: 12px;
+            background-color: #fff5f5;
+        }
+
+        .audio-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        audio {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        PALDO TUBE
+    </div>
+
+    <div class="container">
+        <div class="video-card">
+
+            <video controls>
+                <source src="NBA highlights.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <div class="title">
+                NBA Highlights
+            </div>
+
+            <div class="description">
+                <p id="text-color-red">
+                    PALDO
+                </p>
+
+                <p id="text-underline">
+                    PALDOGS
+                </p>
+            </div>
+
+            <div class="audio-box">
+                <div class="audio-title">
+                    Background Music
+                </div>
+
+                <audio controls>
+                    <source src="NBA AUDIO.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        alert("PALDO");
+
+        document.getElementById("text-color-red").style.color = "red";
+
+        document.getElementById("text-underline").style.textDecoration = "underline";
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+body{
+    margin:0;
+    font-family:Arial;
+    background:#f4f4f4;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    background:white;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:black;
+}
+
+#hero{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:50px;
+}
+
+.hero-image img{
+    width:500px;
+    height:auto;
+}
+
+.cards{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    width:250px;
+}
+
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
